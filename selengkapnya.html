@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baca Selengkapnya - Mitsubishi Body and Paint</title>
+    <!-- Bootstrap CSS -->
+    <!-- Tambahkan Animate.css di bagian <head> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18;
+    background-image: url('https://www.dipo.co.id/_next/image?url=https%3A%2F%2Fcms.dipo.co.id%2Fuploads%2Fimage_97245e58d6.jpg&w=3840&q=75'); /* Ganti dengan URL gambar Anda */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+        .navbar {
+            background-color: #333;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .navbar-brand:hover {
+            color: #fff;
+        }
+
+        .nav-link {
+            color: #ccc !important;
+            margin-right: 15px;
+        }
+
+        .nav-link:hover {
+            color: #ff4d4d !important;
+        }
+
+        .btn-cta {
+            background-color: #ff4d4d;
+            color: #fff;
+            border-radius: 20px;
+            padding: 8px 16px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-cta:hover {
+            background-color: #e63946;
+        }
+
+        /* Custom Styling */
+        .hero-section {
+            background-image: url('https://wallpapercave.com/wp/UEoIuEu.jpg');
+            /* Ganti dengan gambar sesuai */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        .content-section {
+            padding: 60px 0;
+            color: #333;
+        }
+
+        .read-more-btn {
+            background-color: #ff4d4d;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        .read-more-btn:hover {
+            background-color: #e63946;
+            color: #fff;
+        }
+
+        .img-article {
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+       /* Style untuk elemen timeline */
+       .timeline {
+            position: relative;
+            padding-left: 40px;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+            padding-left: 30px;
+            border-left: 3px solid #007bff;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -14px;
+            top: 0;
+            width: 24px;
+            height: 24px;
+            background-color: #007bff;
+            border-radius: 50%;
+        }
+        .timeline-item h5 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #007bff;
+        }
+        .timeline-item p {
+            color: #555;
+            margin: 0;
+        }
+        /* Responsiveness */
+        @media (max-width: 767.98px) {
+            .timeline::before {
+                left: 8%;
+            }
+
+            .timeline-item::before {
+                left: 8%;
+            }
+
+            .timeline-content {
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+
+        /* Scroll-to-top button */
+        #scrollToTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            background-color: #0d6efd;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        #scrollToTopBtn:hover {
+            background-color: #084298;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.8WgW3NsveKwPsMNq5hD63QHaH8&pid=Api&P=0&h=180" alt="Logo" width="75" height="53" class="d-inline-block align-text-center me-2">
+            <a class="navbar-brand" href="index.html">Mitsubishi B&P</a>
+
+            <!-- Toggler for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Kontak & Alamat</a>
+                    </li>
+                    <!-- Dropdown Menu khusus untuk Karir dan Testimoni -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Lainnya
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="carcare.html">Layanan Car Care</a></li>
+                            <li><a class="dropdown-item" href="testimonals.html">Mitra & Kerja Sama</a></li>
+                            <li><a class="dropdown-item" href="mitra.html">Gallery Service</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+    <!-- Content Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="row mb-5">
+                <p>Perusahaan didirikan pada tahun 1976 dengan nama PT Sumatera Motor Ltd. Co. kemudian menjadi PT
+                    Sumatera Berlian Motors dan terakhir menjadi PT Dipo Internasional Pahala Otomotif (DIPO). DIPO
+                    adalah dealer resmi kendaraan bermotor merek Mitsubishi baik kendaraan penumpang maupun niaga
+                    produksi dari Mitsubishi Motors Corporation dan Mitsubishi Fuso Truck & Bus Corporation dengan
+                    jaringan dealer di wilayah Sumatera, Jawa, DKI Jakarta dan Kalimantan. DIPO merupakan dealer
+                    resmi kendaraan bermotor merek Mitsubishi terbesar di Indonesia yang melayani penjualan unit
+                    kendaraan beserta layanan purna jualnya, termasuk penjualan suku cadang original, pelayanan
+                    bengkel dan perbaikan body kendaraan.</p>
+
+
+            </div>
+        </div>
+    </section>
+   <!-- Judul Timeline -->
+<div class="container text-center my-5">
+    <h2 class="display-5 fw-bold">Timeline Perusahaan</h2>
+    <p class="lead text-muted">Lacak perkembangan kami dari awal hingga saat ini</p>
+</div>
+
+<!-- Kontainer Timeline -->
+<div class="container">
+    <div class="timeline">
+        <!-- Item Timeline 1 -->
+        <div class="timeline-item">
+            <h5>Tahun 2000 - Didirikan</h5>
+            <p>Perusahaan kami didirikan dengan visi untuk memberikan layanan terbaik dalam industri otomotif.</p>
+        </div>
+
+        <!-- Item Timeline 2 -->
+        <div class="timeline-item">
+            <h5>Tahun 2005 - Ekspansi Layanan</h5>
+            <p>Kami memperluas layanan dengan menambah cabang baru dan meningkatkan fasilitas untuk pelanggan.</p>
+        </div>
+
+        <!-- Item Timeline 3 -->
+        <div class="timeline-item">
+            <h5>Tahun 2010 - Inovasi Teknologi</h5>
+            <p>Memperkenalkan teknologi terbaru untuk layanan cat dan body repair yang lebih efisien dan ramah lingkungan.</p>
+        </div>
+
+        <!-- Item Timeline 4 -->
+        <div class="timeline-item">
+            <h5>Tahun 2020 - Kerja Sama Global</h5>
+            <p>Bekerja sama dengan perusahaan internasional untuk memperluas jaringan dan meningkatkan kualitas layanan.</p>
+        </div>
+    </div>
+</div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" onclick="scrollToTop()">↑</button>
+    <!-- Bootstrap JS (optional) -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Show or hide the scroll to top button
+        window.onscroll = function () {
+            const scrollBtn = document.getElementById("scrollToTopBtn");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollBtn.style.display = "block";
+            } else {
+                scrollBtn.style.display = "none";
+            }
+        };
+
+        // Scroll to top function
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+    </script>
+</body>
+
+</html>
